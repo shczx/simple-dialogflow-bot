@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialogflow</title>
+        <style>
+            .start {
+                position: fixed;
+                left: 300px;
+                top: 400px;
+                font-size: large;
+            }
+            .bot {
+                position: fixed;
+                top: 100px;
+                right: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="start" onclick="startToChat()">Start to Chat!</button>
+        <script>
+            function startToChat() {
+                document.body.innerHTML += 
+                '<iframe class="bot"\
+                    allow="microphone;" \
+                    width="450" \
+                    height="700" \
+                    src="https://console.dialogflow.com/api-client/demo/embedded/b6a76bc7-36c9-4b92-abe2-241aa1485da6"> \
+                </iframe>'
+            }
+        </script>
+    </body>
+</html>
